@@ -1,10 +1,16 @@
+using BruTile;
+using BruTile.Predefined;
+using BruTile.Web;
 using System;
 using System.Collections.Generic;
+using System.Drawing;
+using System.Drawing.Imaging;
+using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Imagery
+namespace MapImagery
 {
     static class Program
     {
@@ -14,6 +20,8 @@ namespace Imagery
         [STAThread]
         static void Main()
         {
+
+
             Application.SetHighDpiMode(HighDpiMode.SystemAware);
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);

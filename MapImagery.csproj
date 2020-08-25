@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+	<PropertyGroup>
+		<OutputType>WinExe</OutputType>
+		<TargetFramework>netcoreapp3.1</TargetFramework>
+		<UseWindowsForms>true</UseWindowsForms>
+		<RuntimeIdentifier>win-x64</RuntimeIdentifier>
+		<PublishSingleFile>true</PublishSingleFile>
+	</PropertyGroup>
+
+	<ItemGroup>
+	  <Compile Remove="MapViewer.Designer.cs" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Compile Include="MapViewer.Designer.cs" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <PackageReference Include="BruTile" Version="3.0.0" />
+	</ItemGroup>
+
+</Project>
